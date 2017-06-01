@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="light_theme_pallete">#FFA8E9</color>
+    <color name="lights">#FFDBFF</color>
+    <color name="gag">#FF84E4</color>
+    <color name="gag2">#E76F51</color>
+    <color name="gag3">#F4A261</color>
+    <color name="gag4">#F8c39a</color>
+</resources>

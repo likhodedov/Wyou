@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="apptour">
+        <!--<item>@drawable/background1</item>-->
+        <!--<item>@drawable/background2</item>-->
+        <!--<item>@drawable/background3</item>-->
+        <item>@drawable/background8</item>
+    </array>
+
+</resources>

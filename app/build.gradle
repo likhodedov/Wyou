@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'WithYouApp'
+            keyPassword 'ld20051971'
+            storeFile file('D:/folder/pass.jks')
+            storePassword '20051971'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "together.withyou"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+allprojects {
+    repositories {
+        // ...
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.amplitude:android-sdk:2.13.2'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.github.jakob-grabner:Circle-Progress-View:v1.3'
+}
