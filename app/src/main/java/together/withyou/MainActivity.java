@@ -73,7 +73,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Amplitude.getInstance().initialize(this, "17ed6ff2f639b8331a2f96e321630521").enableForegroundTracking(getApplication());
+            if (getIntent().getExtras().getBoolean("NOTIFY")) {
+                Toast.makeText(MainActivity.this, "OPENED FROM NOTIFY", Toast.LENGTH_SHORT).show();
+            }
+
+
         Gson gson = new Gson();
+        Amplitude.getInstance().logEvent("APP_LAUNHED");
         SharedPreferences  mPrefss = getPreferences(MODE_PRIVATE);
       String json = mPrefss.getString("MyCheckedDate", "");
               TogetherTimeManager obj = gson.fromJson(json, TogetherTimeManager.class);
@@ -145,11 +151,11 @@ public class MainActivity extends Activity {
                     public void onClick(View v) {
                         // Process to get Current Date
 
-                        AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
+                      AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
 
 
 
-                        Calendar calendar2 = Calendar.getInstance();
+                        final Calendar calendar2 = Calendar.getInstance();
 
                         calendar2.setTimeInMillis(System.currentTimeMillis());
 
@@ -233,7 +239,12 @@ public class MainActivity extends Activity {
                                 }, mYear, mMonth, mDay);
                         dpd.show();
                         //System.gc();
-                        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,calendar2.getTimeInMillis(),10000/*AlarmManager.INTERVAL_FIFTEEN_MINUTES*/,pendingIntent);
+
+
+
+                                alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,calendar2.getTimeInMillis(),10000/*AlarmManager.INTERVAL_FIFTEEN_MINUTES*/,pendingIntent);
+
+
                     }
                 });
    //         }});

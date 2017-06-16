@@ -1,5 +1,7 @@
 package together.withyou;
 
+import android.util.Log;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -19,7 +21,7 @@ public class TogetherTimeManager  {
 
     public int daysBetween(){
         Calendar dayOne = (Calendar) Fixed_day.clone(),
-                dayTwo=(Calendar.getInstance());
+                dayTwo=Calendar.getInstance();
 
         if (dayOne.get(Calendar.YEAR) == dayTwo.get(Calendar.YEAR)) {
             return Math.abs(dayOne.get(Calendar.DAY_OF_YEAR) - dayTwo.get(Calendar.DAY_OF_YEAR));
@@ -49,6 +51,21 @@ public class TogetherTimeManager  {
                 dayTwo=(Calendar.getInstance());
                 return dayOne.compareTo(dayTwo);
     }
+    public int GetCountMonthsBetween(){
+        int monthdiffer;
+        int s=-1;
+        Calendar today=Calendar.getInstance();
+            if (((Fixed_day.get(Calendar.DAY_OF_MONTH))- today.get(Calendar.DAY_OF_MONTH))==1) {
+
+                int yearsInBetween = today.get(Calendar.YEAR)
+                        - Fixed_day.get(Calendar.YEAR);
+                monthdiffer =yearsInBetween*12 + (today.get(Calendar.MONTH) - Fixed_day.get(Calendar.MONTH));
+                Log.d("TAG","MONTH between "+monthdiffer);
+            }
+            else monthdiffer=0;
+       return monthdiffer;
+    }
+
 
 
 }

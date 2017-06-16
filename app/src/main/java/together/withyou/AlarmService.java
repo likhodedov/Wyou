@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -58,24 +59,39 @@ public class AlarmService extends Service {
     @Override
 
     public void onStart(Intent intent, int startId) {
-        android.os.Debug.waitForDebugger();  // this line is key
+//        android.os.Debug.waitForDebugger();  // ONLY FOR DEBUGGER
 
-// TODO Auto-generated method stub
+// TODO ADD
 
         super.onStart(intent, startId);
         Gson gson = new Gson();
+        int betw=0;
         String lala= "";
 //        NotifyManager not=new NotifyManager("Привет","Тестовое сообщение",getApplicationContext());
-//           not.addNotification();
+//        not.addNotification();
         SharedPreferences mPrefss=getSharedPreferences("MainActivity",MODE_PRIVATE);
         String json = mPrefss.getString("MyCheckedDate", "");
         TogetherTimeManager obj = gson.fromJson(json, TogetherTimeManager.class);
+        //Log.e("TAG","HEY NOW WILL BE EE");
         if (obj!=null) {
             int days=obj.daysBetween();
             lala=Integer.toString(days);
+            betw=obj.GetCountMonthsBetween();
+            Log.e("MONTHS"," "+ betw);
 
+            if (betw%12==0){
+                String variety;
+                if (betw/12==1) variety="year"; else variety="years";
+                NotifyManager notification=new NotifyManager("Don't forget, friend!","Tomorrow you will meet "+betw/12+variety+"!",getApplicationContext());
+                notification.addNotification();}
+            else
+            if (betw!=0){
+                String variety;
+                if (betw==1) variety="month"; else variety="months";
+                NotifyManager notification=new NotifyManager("Hey","Tomorrow you will meet "+betw+variety+"!",getApplicationContext());
+                notification.addNotification();}
         }
-        Toast.makeText(this, "MyAlarmService.onStart()"+lala, Toast.LENGTH_LONG).show();
+
 
         stopSelf();
 

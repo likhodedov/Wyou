@@ -15,14 +15,17 @@ import android.support.v4.app.TaskStackBuilder;
 
 import java.util.Random;
 
+import static android.app.Notification.DEFAULT_SOUND;
+import static android.app.Notification.DEFAULT_VIBRATE;
+
 /**
  * Created by d.lihodedov on 22.02.2017.
  */
 public class NotifyManager {
-String Title;
-String Description;
+    String Title;
+    String Description;
     Context context;
-   public NotifyManager(String title, String description, Context cont){
+    public NotifyManager(String title, String description, Context cont){
         Title=title;
        Description=description;
        context=cont;
@@ -38,9 +41,11 @@ String Description;
                 new NotificationCompat.Builder(context)
                         .setSmallIcon(R.drawable.notification_icon)
                         .setContentTitle(Title)
-                        .setContentText(Description);
-
+                        .setAutoCancel(true)
+                        .setContentText(Description)
+                        .setDefaults(DEFAULT_SOUND | DEFAULT_VIBRATE);
         Intent notificationIntent = new Intent(context, MainActivity.class);
+        notificationIntent.putExtra("NOTIFY",true);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);
