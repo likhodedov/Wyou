@@ -42,19 +42,17 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MONTH" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="withyou" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eaf5fffb-05e6-4839-8487-81526da9b527" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java" afterPath="$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
     </list>
     <ignored path="withYou.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,10 +102,25 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1581">
-              <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+            <state relative-caret-position="248">
+              <caret line="177" column="99" selection-start-line="177" selection-start-column="99" selection-end-line="177" selection-end-column="99" />
               <folding>
-                <marker date="1497605156735" expanded="false" signature="6212:6321" ph="(v) → {" />
+                <element signature="e#5450#5885#0" expanded="true" />
+                <element signature="e#5884#5885#0" expanded="true" />
+                <element signature="e#5937#9416#0" expanded="true" />
+                <element signature="e#9415#9416#0" expanded="true" />
+                <element signature="e#10636#11195#0" expanded="true" />
+                <element signature="e#10855#11137#0" expanded="true" />
+                <element signature="e#11136#11137#0" expanded="true" />
+                <element signature="e#11194#11195#0" expanded="true" />
+                <element signature="e#11710#12270#0" expanded="true" />
+                <element signature="e#11930#12212#0" expanded="true" />
+                <element signature="e#12211#12212#0" expanded="true" />
+                <element signature="e#12269#12270#0" expanded="true" />
+                <element signature="e#12920#13634#0" expanded="true" />
+                <element signature="e#13633#13634#0" expanded="true" />
+                <element signature="e#14431#14432#0" expanded="true" />
+                <element signature="e#14474#14475#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,18 +129,18 @@
       <file leaf-file-name="TogetherTimeManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="674">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConverterTime.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConverterTime.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/ConverterTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="170">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -136,20 +149,18 @@
       <file leaf-file-name="AlarmService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-              <folding>
-                <element signature="e#1354#1455#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="31">
+              <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotifyManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NotifyManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -1768,7 +1779,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/PointF.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/ConverterTime.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/rounded_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/random_images_array.xml" />
@@ -1781,12 +1791,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/test.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/together/withyou/ConverterTime.java" />
       </list>
     </option>
   </component>
@@ -2029,6 +2040,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withYou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="withYou" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2047,7 +2088,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/android-sdk" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="23c5ecca7d43" />
+    <property name="device.picker.selection" value="00bd9f1ce5b6b398" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -2527,7 +2568,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.48720682" order="6" side_tool="false" content_ui="tabs" />
@@ -2543,8 +2584,8 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3363029" sideWeight="0.50429183" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17803837" sideWeight="0.49335548" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17803837" sideWeight="0.49335548" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -2618,12 +2659,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java</url>
-          <line>53</line>
+          <line>47</line>
           <properties class="together.withyou.TogetherTimeManager" method="GetCountMonthsBetween" />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="MainActivity">
@@ -2636,13 +2677,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/profile.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2653,7 +2687,22 @@
         <state relative-caret-position="0">
           <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
-            <marker date="1497605156735" expanded="false" signature="6212:6321" ph="(v) → {" />
+            <element signature="e#5450#5885#0" expanded="true" />
+            <element signature="e#5884#5885#0" expanded="true" />
+            <element signature="e#5937#9416#0" expanded="true" />
+            <element signature="e#9415#9416#0" expanded="true" />
+            <element signature="e#10636#11195#0" expanded="true" />
+            <element signature="e#10855#11137#0" expanded="true" />
+            <element signature="e#11136#11137#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
+            <element signature="e#11710#12270#0" expanded="true" />
+            <element signature="e#11930#12212#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12269#12270#0" expanded="true" />
+            <element signature="e#12920#13634#0" expanded="true" />
+            <element signature="e#13633#13634#0" expanded="true" />
+            <element signature="e#14431#14432#0" expanded="true" />
+            <element signature="e#14474#14475#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2683,7 +2732,22 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1497605156735" expanded="false" signature="6212:6321" ph="(v) → {" />
+            <element signature="e#5450#5885#0" expanded="true" />
+            <element signature="e#5884#5885#0" expanded="true" />
+            <element signature="e#5937#9416#0" expanded="true" />
+            <element signature="e#9415#9416#0" expanded="true" />
+            <element signature="e#10636#11195#0" expanded="true" />
+            <element signature="e#10855#11137#0" expanded="true" />
+            <element signature="e#11136#11137#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
+            <element signature="e#11710#12270#0" expanded="true" />
+            <element signature="e#11930#12212#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12269#12270#0" expanded="true" />
+            <element signature="e#12920#13634#0" expanded="true" />
+            <element signature="e#13633#13634#0" expanded="true" />
+            <element signature="e#14431#14432#0" expanded="true" />
+            <element signature="e#14474#14475#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2715,7 +2779,22 @@
         <state relative-caret-position="0">
           <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
           <folding>
-            <marker date="1497605156735" expanded="false" signature="6212:6321" ph="(v) → {" />
+            <element signature="e#5450#5885#0" expanded="true" />
+            <element signature="e#5884#5885#0" expanded="true" />
+            <element signature="e#5937#9416#0" expanded="true" />
+            <element signature="e#9415#9416#0" expanded="true" />
+            <element signature="e#10636#11195#0" expanded="true" />
+            <element signature="e#10855#11137#0" expanded="true" />
+            <element signature="e#11136#11137#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
+            <element signature="e#11710#12270#0" expanded="true" />
+            <element signature="e#11930#12212#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12269#12270#0" expanded="true" />
+            <element signature="e#12920#13634#0" expanded="true" />
+            <element signature="e#13633#13634#0" expanded="true" />
+            <element signature="e#14431#14432#0" expanded="true" />
+            <element signature="e#14474#14475#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2847,11 +2926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/notification_icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/android-sdk/sources/android-23/android/content/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2914,6 +2988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
           <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2947,6 +3022,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/android-sdk/sources/android-23/android/os/BaseBundle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="620" column="19" selection-start-line="620" selection-start-column="19" selection-end-line="620" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/notification_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest">
         <state />
@@ -2958,54 +3070,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/ConverterTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="674">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1581">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        <state relative-caret-position="248">
+          <caret line="177" column="99" selection-start-line="177" selection-start-column="99" selection-end-line="177" selection-end-column="99" />
           <folding>
-            <marker date="1497605156735" expanded="false" signature="6212:6321" ph="(v) → {" />
+            <element signature="e#5450#5885#0" expanded="true" />
+            <element signature="e#5884#5885#0" expanded="true" />
+            <element signature="e#5937#9416#0" expanded="true" />
+            <element signature="e#9415#9416#0" expanded="true" />
+            <element signature="e#10636#11195#0" expanded="true" />
+            <element signature="e#10855#11137#0" expanded="true" />
+            <element signature="e#11136#11137#0" expanded="true" />
+            <element signature="e#11194#11195#0" expanded="true" />
+            <element signature="e#11710#12270#0" expanded="true" />
+            <element signature="e#11930#12212#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12269#12270#0" expanded="true" />
+            <element signature="e#12920#13634#0" expanded="true" />
+            <element signature="e#13633#13634#0" expanded="true" />
+            <element signature="e#14431#14432#0" expanded="true" />
+            <element signature="e#14474#14475#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/TogetherTimeManager.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/ConverterTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/AlarmService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="91" column="48" selection-start-line="91" selection-start-column="48" selection-end-line="91" selection-end-column="48" />
-          <folding>
-            <element signature="e#1354#1455#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/together/withyou/NotifyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>

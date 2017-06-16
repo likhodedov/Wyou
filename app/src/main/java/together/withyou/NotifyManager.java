@@ -31,10 +31,6 @@ public class NotifyManager {
        context=cont;
     }
 
-
-//    int FM_NOTIFICATION_ID=5;
-
-
     protected void addNotification() {
 
         NotificationCompat.Builder builder =
@@ -45,7 +41,7 @@ public class NotifyManager {
                         .setContentText(Description)
                         .setDefaults(DEFAULT_SOUND | DEFAULT_VIBRATE);
         Intent notificationIntent = new Intent(context, MainActivity.class);
-        notificationIntent.putExtra("NOTIFY",true);
+        notificationIntent.putExtra("NOTIFY",35);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);
