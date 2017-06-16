@@ -115,7 +115,7 @@
             CircleProgressView:cpv_barColor="@color/gag2"
             CircleProgressView:cpv_barWidth="20dp"
             CircleProgressView:cpv_innerContourSize="0dp"
-            CircleProgressView:cpv_maxValue="100"
+            CircleProgressView:cpv_maxValue="365"
             CircleProgressView:cpv_outerContourSize="0dp"
             CircleProgressView:cpv_rimColor="@color/gag4"
             CircleProgressView:cpv_rimWidth="8dp"

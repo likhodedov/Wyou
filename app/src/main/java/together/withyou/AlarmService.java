@@ -59,12 +59,24 @@ public class AlarmService extends Service {
                 NotifyManager notification=new NotifyManager("Don't forget, friend!","Tomorrow you will meet "+betw/12+" "+variety+"!",getApplicationContext());
                 notification.addNotification();}
             else
-            if (betw!=0){
+            if ((betw/12==0)){
                 String variety;
                 if (betw==1) variety="month"; else variety="months";
                 NotifyManager notification=new NotifyManager("Don't forget, friend!","Tomorrow you will meet "+betw+" "+variety+"!",getApplicationContext());
                 notification.addNotification();}
+            else if (betw/12>1)
+            {
+                String variety_year;
+                String variety_month;
+                if (betw%12==1) variety_month="month"; else variety_month="months";
+                if (betw/12==1) variety_year="year"; else variety_year="years";
+                NotifyManager notification=new NotifyManager("Don't forget, friend!","Tomorrow you will meet "+betw/12+" "+variety_year+" and "+betw%12+" "+variety_month+"!",getApplicationContext());
+                notification.addNotification();
+            }
+
+
         }
+
         stopSelf();
     }
 
