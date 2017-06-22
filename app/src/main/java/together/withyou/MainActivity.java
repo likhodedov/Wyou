@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Amplitude.getInstance().initialize(this, "17ed6ff2f639b8331a2f96e321630521").enableForegroundTracking(getApplication());
         Amplitude.getInstance().logEvent("APP_LAUNCHED");
-
+        final Calendar calendar2 = Calendar.getInstance();
         try {
             if (getIntent().getExtras().getInt("NOTIFY")==35) {
                 Amplitude.getInstance().logEvent("APP_LAUNCHED_NOTIFY"); }}
@@ -83,8 +83,13 @@ public class MainActivity extends Activity {
         Gson gson = new Gson();
         SharedPreferences  mPrefss = getPreferences(MODE_PRIVATE);
         String json = mPrefss.getString("MyCheckedDate", "");
+        final AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
               TogetherTimeManager obj = gson.fromJson(json, TogetherTimeManager.class);
-        if (obj!=null) {days=obj.daysBetween();}
+        if (obj!=null) {days=obj.daysBetween();
+            calendar2.setTimeInMillis(System.currentTimeMillis());
+            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,calendar2.getTimeInMillis(),10000/*AlarmManager.INTERVAL_FIFTEEN_MINUTES*/,pendingIntent);
+
+        }
 
         Intent myIntent = new Intent(MainActivity.this, AlarmService.class);
         pendingIntent = PendingIntent.getService(MainActivity.this, 0, myIntent, 0);
@@ -142,8 +147,8 @@ public class MainActivity extends Activity {
                 setdataButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                         AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
-                         final Calendar calendar2 = Calendar.getInstance();
+
+
                          calendar2.setTimeInMillis(System.currentTimeMillis());
                          final Calendar c = Calendar.getInstance();
                          mYear = c.get(Calendar.YEAR);

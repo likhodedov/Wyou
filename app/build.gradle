@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'WithYouApp'
             keyPassword 'ld20051971'
-            storeFile file('D:/folder/pass.jks')
+            storeFile file('C:/Projects/pass.jks')
             storePassword '20051971'
         }
     }

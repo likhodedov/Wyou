@@ -42,17 +42,14 @@ public class AlarmService extends Service {
         super.onStart(intent, startId);
         Gson gson = new Gson();
         int betw=0;
-        String lala= "";
         SharedPreferences mPrefss=getSharedPreferences("MainActivity",MODE_PRIVATE);
         String json = mPrefss.getString("MyCheckedDate", "");
         TogetherTimeManager obj = gson.fromJson(json, TogetherTimeManager.class);
-        //Log.e("TAG","HEY NOW WILL BE EE");
         if (obj!=null) {
             int days=obj.daysBetween();
-            lala=Integer.toString(days);
             betw=obj.GetCountMonthsBetween();
             Log.e("MONTHS"," "+ betw);
-
+            if (betw!=0){
             if (betw%12==0){
                 String variety;
                 if (betw/12==1) variety="year"; else variety="years";
@@ -71,12 +68,9 @@ public class AlarmService extends Service {
                 if (betw%12==1) variety_month="month"; else variety_month="months";
                 if (betw/12==1) variety_year="year"; else variety_year="years";
                 NotifyManager notification=new NotifyManager("Don't forget, friend!","Tomorrow you will meet "+betw/12+" "+variety_year+" and "+betw%12+" "+variety_month+"!",getApplicationContext());
-                notification.addNotification();
+                notification.addNotification();}
             }
-
-
         }
-
         stopSelf();
     }
 
