@@ -2,4 +2,5 @@
     <string name="app_name">With You</string>
     <string name="left_title">I am</string>
     <string name="right_title">My love</string>
+    <string name="days">days</string>
 </resources>

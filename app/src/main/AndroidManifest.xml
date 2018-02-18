@@ -22,7 +22,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".Main2Activity_"
             android:configChanges="orientation"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait">
@@ -33,10 +33,12 @@
             </intent-filter>
         </activity>
 
-               <service
+        <service
             android:name=".AlarmService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
+
+
     </application>
 
 </manifest>

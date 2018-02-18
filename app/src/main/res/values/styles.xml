@@ -6,6 +6,9 @@
         <item name="colorPrimary">@color/gag4</item>
         <item name="colorPrimaryDark">@color/gag4</item>
         <item name="colorAccent">@color/gag4</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 </resources>
